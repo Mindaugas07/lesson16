@@ -48,5 +48,53 @@
 # write a function called calculate, function accepts sign as string, and two variables as integers.
 # Do the calculation between two numbers according to sign and return result Handle all possible errors that may occur.
 
-def calculate(sign: str, number_one: int, number_two: int) -> int:
-    return number_one sign number_two 
+# def calculate(sign: str, number_one: int, number_two: int) -> int:
+#     if sign not in "+-/*":
+#         raise ValueError("You entered incorrect sign, please use '+', '-', '*' or '/' ")
+#     if type(number_one) is not int and type(number_two) is not int:
+#         raise TypeError("Please enter two integers ")
+#     if sign == "/" and number_two == 0:
+#         raise ZeroDivisionError("You can't divide with 0 ")
+#     if sign == "+":
+#             result = number_one + number_two
+#     if sign == "-":
+#             result = number_one - number_two
+#     if sign == "*":
+#             result = number_one * number_two
+#     if sign == "/":
+#             result = number_one / number_two
+    
+#     return result
+
+
+# # print(calculate())
+
+# try:
+#       print(calculate("+", r, 8))
+# except TypeError:
+#       print("You entered incorrect sign, please use '+', '-', '*' or '/' ")
+# except ValueError as e:
+#       print(e.args)
+# except ZeroDivisionError:
+#       print("You can't divide with 0")
+
+# import calc as calculator
+
+# a = 10
+# b = 20
+
+# result = calculator.add(a, b)
+
+# print(result)
+
+# from echo import echo
+
+# print(f"main name is {__name__}")
+
+from string import string_to_capital_letters as capitalize
+from lists import list_to_string
+from numbers import print_number_1000_times
+
+print(capitalize("afsdafsdf"))
+print(list_to_string([4, 8, 7]))
+print(print_number_1000_times(5))
