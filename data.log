@@ -1,0 +1,26 @@
+
+30/10/2023 21:18:27 - root - INFO - The input was fsgsdh
+30/10/2023 21:18:30 - root - INFO - The input was ewr
+31/10/2023 18:16:34 - root - INFO - The input was [5, 7, 78, 1, 1, 1] and 1, the result was [5, 7, 78, 1, 1, 1]
+31/10/2023 19:28:02 - root - DEBUG - Car was turned off!
+31/10/2023 19:28:02 - root - DEBUG - Car was turned on with 80 L of gas 
+31/10/2023 19:28:02 - root - CRITICAL - Car can't consume gas while the engine is turned off!
+31/10/2023 19:28:25 - root - DEBUG - Car was turned on!
+31/10/2023 19:28:25 - root - DEBUG - Car was turned on with 80 L of gas 
+31/10/2023 19:28:25 - root - DEBUG - After consuming gas there is left 80
+31/10/2023 19:28:26 - root - DEBUG - After consuming gas there is left 75
+31/10/2023 19:28:27 - root - DEBUG - After consuming gas there is left 70
+31/10/2023 19:28:28 - root - DEBUG - After consuming gas there is left 65
+31/10/2023 19:28:29 - root - DEBUG - After consuming gas there is left 60
+31/10/2023 19:28:30 - root - DEBUG - After consuming gas there is left 55
+31/10/2023 19:28:31 - root - DEBUG - After consuming gas there is left 50
+31/10/2023 19:28:32 - root - DEBUG - After consuming gas there is left 45
+31/10/2023 19:28:33 - root - DEBUG - After consuming gas there is left 40
+31/10/2023 19:28:34 - root - DEBUG - After consuming gas there is left 35
+31/10/2023 19:28:35 - root - DEBUG - After consuming gas there is left 30
+31/10/2023 19:28:36 - root - DEBUG - After consuming gas there is left 25
+31/10/2023 19:28:37 - root - DEBUG - After consuming gas there is left 20
+31/10/2023 19:28:38 - root - DEBUG - After consuming gas there is left 15
+31/10/2023 19:28:39 - root - DEBUG - After consuming gas there is left 10
+31/10/2023 19:28:40 - root - DEBUG - After consuming gas there is left 5
+31/10/2023 19:28:41 - root - DEBUG - Car was turned off!

@@ -91,10 +91,67 @@
 
 # print(f"main name is {__name__}")
 
-from string import string_to_capital_letters as capitalize
-from lists import list_to_string
-from numbers import print_number_1000_times
+# from stringsai import string_to_capital_letters as capitalize
+# from lists import list_to_string
+# from numbers_ import print_number_1000_times
+# from webcam import show_webcam
 
-print(capitalize("afsdafsdf"))
-print(list_to_string([4, 8, 7]))
-print(print_number_1000_times(5))
+# # print(capitalize("afsdafsdf"))
+# # print(list_to_string([4, 8, 7]))
+# # print(print_number_1000_times(5))
+
+# show_webcam()
+
+import logging, time
+
+# logging.basicConfig(level=logging.DEBUG,filename='data.log', filemode='a', format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', datefmt='%d/%m/%Y %H:%M:%S')
+# input_information = input("Enter something:\n")
+# logging.info(f"The input was {input_information}")
+from typing import List
+
+logging.basicConfig(level=logging.DEBUG,filename='data.log', filemode='a', format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', datefmt='%d/%m/%Y %H:%M:%S')
+
+# def move_to_end(list_of_elements: List[int], element: int) -> list:
+#     for some_element in list_of_elements:
+#         if some_element == element:
+#             list_of_elements.append(list_of_elements.pop(list_of_elements.index(some_element)))
+#     logging.info(f"The input was {list_of_elements} and {element}, the result was {list_of_elements}")
+#     return list_of_elements
+
+
+
+# move_to_end([1, 1, 5, 1, 7, 78], 1)
+
+def consume_gas_level(starting_level: int = 50, engine_running: bool = False) -> int:
+    if engine_running:
+        logging.debug(f"After consuming gas there is left {starting_level}")
+        return starting_level - 5
+    else:
+        logging.critical("Car can't consume gas while the engine is turned off!")
+        raise ValueError("Engine is not running, can't consume gas!")
+    
+
+def car_toggle_switch(state: bool=False) -> bool:
+    if state == True:
+        logging.debug("Car was turned on!")
+        print("Engine is running!")
+    else:
+        logging.debug("Car was turned off!")
+        print("Engine is not running!")
+    return state
+    
+
+def drive() -> None:
+    car_state = car_toggle_switch(True)
+    gas_level = 80
+    logging.debug(f"Car was turned on with {gas_level} L of gas ")
+    while gas_level > 0:
+        message = f"Wroom wroom I have {gas_level} Litres in tank"
+        gas_level = consume_gas_level(gas_level, car_state)
+        print(message)
+        time.sleep(1)
+    print("I ran out of gass..")
+    car_state = car_toggle_switch()
+
+
+drive()
