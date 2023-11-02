@@ -102,14 +102,14 @@
 
 # show_webcam()
 
-import logging, time
+# import logging, time
+
+# # logging.basicConfig(level=logging.DEBUG,filename='data.log', filemode='a', format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', datefmt='%d/%m/%Y %H:%M:%S')
+# # input_information = input("Enter something:\n")
+# # logging.info(f"The input was {input_information}")
+# from typing import List
 
 # logging.basicConfig(level=logging.DEBUG,filename='data.log', filemode='a', format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', datefmt='%d/%m/%Y %H:%M:%S')
-# input_information = input("Enter something:\n")
-# logging.info(f"The input was {input_information}")
-from typing import List
-
-logging.basicConfig(level=logging.DEBUG,filename='data.log', filemode='a', format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', datefmt='%d/%m/%Y %H:%M:%S')
 
 # def move_to_end(list_of_elements: List[int], element: int) -> list:
 #     for some_element in list_of_elements:
@@ -229,3 +229,8 @@ logging.basicConfig(level=logging.DEBUG,filename='data.log', filemode='a', forma
 #         print(err.args)
 
 # my_dummy_int_func("45h")
+
+# import logging
+# logging.basicConfig(level=logging.WARNING, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', datefmt='%d/%m/%Y %H:%M:%S')
+# name = input("Enter Your Name:\n")
+# logging.warning(f"{name} has logged in successfully !!")
